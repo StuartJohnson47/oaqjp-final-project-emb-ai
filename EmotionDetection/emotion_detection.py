@@ -40,6 +40,12 @@ def emotion_detector(text_to_analyze):
             highest_score = score
             dominant_emotion = emotion
 
-    ##Retrun results using the print f format that is the preferred way to use print.
-    return print(f"anger: {anger}\ndisgust: {disgust}\nfear: {fear}\njoy: {joy}\nsadness: {sadness}\ndominant_emotion: {dominant_emotion}")
-
+    ##Return results 
+    return { 
+        "anger": anger,
+        "disgust": disgust,
+        "fear": fear,
+        "joy": joy,
+        "sadness": sadness,
+        "dominant_emotion": dominant_emotion}
+        
